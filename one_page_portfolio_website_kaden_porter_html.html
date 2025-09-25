@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kaden Porter — Portfolio</title>
+  <meta name="description" content="Kaden Porter's professional portfolio and contact page" />
+  <!--
+    Instructions:
+    1) Preview: Save this file as index.html and open it in your browser.
+    2) Customize: Replace placeholder text (name, bio, links, projects).
+    3) Host: Upload to GitHub Pages, Netlify, or Vercel for free hosting.
+    4) LinkedIn: Add the hosted URL to your LinkedIn Contact Info or Featured section.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0b74de;--bg:#f7f9fc;--card:#ffffff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; background:var(--bg); color:#0f172a}
+    .container{max-width:980px;margin:48px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .avatar{width:96px;height:96px;border-radius:16px;flex:0 0 96px;background:linear-gradient(135deg,var(--accent),#7bd389);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:8px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:24px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 24px rgba(12,22,40,0.06)}
+    .section-title{font-size:14px;color:var(--muted);margin-bottom:12px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{background:#eef6ff;padding:6px 10px;border-radius:999px;font-size:13px}
+    .project{margin-bottom:12px}
+    .project h3{margin:0 0 6px;font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+    .contact-list{display:flex;flex-direction:column;gap:8px}
+    a.button{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;background:var(--accent);color:white;font-weight:600}
+    footer{margin-top:32px;text-align:center;color:var(--muted);font-size:13px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:80px;height:80px;border-radius:12px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" aria-hidden="true">KP</div>
+      <div>
+        <h1>Kaden Porter</h1>
+        <p class="lead">Banking professional • Aspiring management trainee • Portfolio of projects & UX improvements</p>
+        <div style="margin-top:10px">
+          <a class="button" href="#contact">Contact / Hire</a>
+          <a style="margin-left:10px;text-decoration:none;color:var(--accent);font-weight:600" href="#projects">Projects</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card" id="about">
+          <div class="section-title">About</div>
+          <p>Hi — I’m Kaden. I currently work in retail banking and focus on improving digital loan applications and process efficiency. I enjoy solving UX problems and learning commercial banking fundamentals. This site highlights relevant projects, sample work, and ways to contact me.</p>
+        </section>
+
+        <section class="card" id="projects" style="margin-top:16px">
+          <div class="section-title">Selected Projects</div>
+
+          <div class="project">
+            <h3>Digital Loan Application Refinements</h3>
+            <p>Identified confusing language and UX issues across HELOC, car loan, and mortgage flows; proposed specific text and flow changes that improved clarity for users.</p>
+          </div>
+
+          <div class="project">
+            <h3>Duplicate Data Checks Evaluation</h3>
+            <p>Analyzed internal processes during shadowing and presented opportunities to reduce redundant checks and streamline QC tasks.</p>
+          </div>
+
+          <div class="project">
+            <h3>Capstone: Pre-Close QC Automation Ideas</h3>
+            <p>Created workflow suggestions and checklists for pre-close reviews to reduce errors and meet TRID deadlines more reliably.</p>
+          </div>
+
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <div class="section-title">Experience & Resume (high-level)</div>
+          <p style="margin:0 0 8px">Teller, Bangor Savings Bank — Sept 2024 — Present. Hero Award recipient. Responsibilities include customer service, new accounts, and support for digital application workflows.</p>
+          <p style="margin:0 0 8px">Skills: Customer communication, process mapping, Encompass familiarity, data quality checks, loan document review.</p>
+          <a href="#contact" class="button">Download Resume (PDF)</a>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">Contact</div>
+          <div class="contact-list">
+            <div><strong>Email:</strong> yourname@example.com</div>
+            <div><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</div>
+            <div><strong>Location:</strong> Bangor, ME</div>
+            <a href="https://allmylinks.com/" target="_blank" rel="noopener">AllMyLinks (optional)</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <div class="section-title">Skills</div>
+          <div class="skills">
+            <span class="tag">Customer Service</span>
+            <span class="tag">Process Improvement</span>
+            <span class="tag">Loan Ops</span>
+            <span class="tag">Encompass</span>
+            <span class="tag">UX Writing</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px;text-align:center">
+          <div class="section-title">Quick Links</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <a href="#projects" style="text-decoration:none">Projects</a>
+            <a href="#about" style="text-decoration:none">About</a>
+            <a href="#contact" style="text-decoration:none">Contact</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Built with a simple HTML template. Replace placeholder text and host on GitHub Pages, Netlify, or Vercel.
+    </footer>
+  </div>
+
+  <script>
+    // Small convenience: make "Download Resume" open a sample PDF path. Replace with your actual resume path when hosted.
+    document.querySelectorAll('a.button').forEach(btn=>{
+      btn.addEventListener('click', function(e){
+        if(this.textContent.includes('Download Resume')){
+          e.preventDefault();
+          window.location.href = 'resume.pdf';
+        }
+      })
+    })
+  </script>
+</body>
+</html>
