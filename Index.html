@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kaden Porter — Portfolio</title>
+  <meta name="description" content="Kaden Porter's professional portfolio and contact page" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#004aad;--bg:#f5f7fa;--card:#ffffff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; background:var(--bg); color:#0f172a; line-height:1.6}
+    .container{max-width:1000px;margin:48px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .avatar{width:96px;height:96px;border-radius:16px;flex:0 0 96px;background:linear-gradient(135deg,var(--accent),#009ffd);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px;box-shadow:0 4px 12px rgba(0,0,0,0.15)}
+    h1{margin:0;font-size:32px;font-weight:700}
+    p.lead{margin:8px 0 0;color:var(--muted);font-size:16px}
+    .grid{display:grid;grid-template-columns:1fr 300px;gap:24px;margin-top:32px}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 24px rgba(12,22,40,0.08)}
+    .section-title{font-size:14px;color:var(--muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:0.5px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{background:#eef4ff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:500}
+    .project{margin-bottom:16px}
+    .project h3{margin:0 0 6px;font-size:18px;color:var(--accent)}
+    .project p{margin:0;color:#374151;font-size:15px}
+    .contact-list{display:flex;flex-direction:column;gap:8px;font-size:15px}
+    a.button{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;background:var(--accent);color:white;font-weight:600;transition:background .2s}
+    a.button:hover{background:#003380}
+    footer{margin-top:40px;text-align:center;color:var(--muted);font-size:13px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:80px;height:80px;border-radius:12px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" aria-hidden="true">KP</div>
+      <div>
+        <h1>Kaden Porter</h1>
+        <p class="lead">Customer Service Specialist at Bangor Savings Bank • Aspiring Management Trainee • Process & UX Improvement Enthusiast</p>
+        <div style="margin-top:12px">
+          <a class="button" href="#contact">Contact Me</a>
+          <a style="margin-left:12px;text-decoration:none;color:var(--accent);font-weight:600" href="#projects">View Projects</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card" id="about">
+          <div class="section-title">About</div>
+          <p>Hello! I’m Kaden Porter, a banking professional with hands-on experience in customer service, digital loan applications, and operational efficiency. At Bangor Savings Bank, I’ve been recognized with the <strong>Hero Award</strong> for going above and beyond for clients. My passion lies in combining customer-focused service with process improvements that drive efficiency and clarity. I am also eager to expand my knowledge in commercial banking and leadership as I pursue opportunities like the Management Trainee program.</p>
+        </section>
+
+        <section class="card" id="projects" style="margin-top:20px">
+          <div class="section-title">Selected Projects</div>
+
+          <div class="project">
+            <h3>Digital Loan Application Refinements</h3>
+            <p>Reviewed Bangor Savings Bank’s HELOC, car loan, and mortgage application processes. Identified usability issues and unclear language, recommending streamlined form flows and clearer guidance to improve customer experience.</p>
+          </div>
+
+          <div class="project">
+            <h3>Duplicate Data Checks Evaluation</h3>
+            <p>Analyzed internal quality control workflows and highlighted areas where redundant data checks could be reduced. Presented findings to the lending team to support efficiency improvements.</p>
+          </div>
+
+          <div class="project">
+            <h3>Capstone Internship Project</h3>
+            <p>Delivered insights into digital lending, including Freddie Mac training takeaways, recommendations for TRID compliance, and suggestions for pre-close QC workflows to reduce error rates.</p>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:20px">
+          <div class="section-title">Experience</div>
+          <p><strong>Customer Service Specialist</strong>, Bangor Savings Bank (2024–Present)<br>
+          Provide tailored customer support, open and manage new accounts, and assist with digital loan application processes. Recognized with the Hero Award for exceptional service.</p>
+
+          <p><strong>Teller</strong>, Bangor Savings Bank (2024)<br>
+          Gained foundational banking experience, delivering accurate transactions, strong customer communication, and supporting retail operations.</p>
+
+          <a href="resume.pdf" class="button" target="_blank">Download Resume (PDF)</a>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card" id="contact">
+          <div class="section-title">Contact</div>
+          <div class="contact-list">
+            <div><strong>Email:</strong> kaden.porter@email.com</div>
+            <div><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/kaden-porter" target="_blank">linkedin.com/in/kaden-porter</a></div>
+            <div><strong>Location:</strong> Bangor, ME</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:20px">
+          <div class="section-title">Skills</div>
+          <div class="skills">
+            <span class="tag">Customer Service</span>
+            <span class="tag">Process Improvement</span>
+            <span class="tag">Commercial Banking</span>
+            <span class="tag">Loan Operations</span>
+            <span class="tag">Encompass</span>
+            <span class="tag">UX Writing</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:20px;text-align:center">
+          <div class="section-title">Quick Links</div>
+          <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
+            <a href="#projects" style="text-decoration:none;color:var(--accent);font-weight:500">Projects</a>
+            <a href="#about" style="text-decoration:none;color:var(--accent);font-weight:500">About</a>
+            <a href="#contact" style="text-decoration:none;color:var(--accent);font-weight:500">Contact</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © 2025 Kaden Porter. Built with HTML & CSS. Hosted on GitHub Pages.
+    </footer>
+  </div>
+</body>
+</html>
